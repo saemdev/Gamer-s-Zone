@@ -7,7 +7,7 @@ body {
 /* common shared items */
 
 .title {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 700;
 }
 
@@ -148,18 +148,13 @@ body {
 
 .play-instant-container {
     width:80%;
-    margin: 50px auto;
+    margin: 0 auto;
 }
 .play-instant .text-area{
     width:22%;
     text-align: right;
 }
 
-
-.game-items img {
-    width: 20px;
-
-}
 
 .anchor a {
     margin-right: 20px;
@@ -230,9 +225,13 @@ body {
 
 /* .game-items */
 .game-items{
-    padding:50px 0;
+    padding-bottom:50px;
     width:80%;
     margin:0 auto;
+}
+.game-items img {
+    width: 20px;
+
 }
 
 .image-button {
@@ -277,4 +276,46 @@ body {
     color:#F948B2;
     border:1px solid #F948B2;
   }
- 
+ /* funny sec  */
+ .photo-area{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+ }
+ .photo-area img{
+    width:300px;
+    margin:0 10px;
+    gap:20px;
+ }
+ .funny-section {
+    width:80%;
+    margin:0 auto;
+    margin-top: 100px;
+ }
+ .funny-section-container .text-area{
+    text-align: center;
+ }
+ .relative{
+    position: relative;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  
+  color: white;
+  font-size: 18px;
+  
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+ }
+ .funny-section .text-area .linear{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    font-weight: 600;
+    margin:20px 0;
+ }
