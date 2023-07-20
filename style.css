@@ -4,11 +4,6 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
-.column2{
-    display: flex;
-    justify-content: space-evenly;
-}
-
 /* common shared items */
 
 .title {
@@ -549,10 +544,10 @@ body {
         display: grid;
         grid-template-columns: repeat(3,1fr);
     }
-    .column2{
+    /* .column2-container{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-    }
+    } */
 
 
 
@@ -654,12 +649,6 @@ body {
         grid-template-columns: repeat(3,1fr);
     }
       .column-container .image-button {
-        padding: 5px 15px 5px 5px;
-        font-size: 7px;
-        font-weight: bold;
-        margin:3px 0;
-    }
-      .column2 .image-button {
         padding: 5px 15px 5px 5px;
         font-size: 7px;
         font-weight: bold;
