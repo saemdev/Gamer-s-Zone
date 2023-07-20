@@ -41,9 +41,11 @@ body {
     display: flex;
     gap: 10px;
 }
+
 .logo-container h1 {
     margin: 0;
 }
+
 .logo-container img {
     width: 86.041px;
     height: 40px;
@@ -260,16 +262,23 @@ body {
 }
 
 .column-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-items: center;
-    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.column-container .column li{
+    list-style: none;
+}
+.column-container .column li a{
+    text-decoration: none;
 }
 
 .column2-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
 }
 
@@ -290,9 +299,9 @@ body {
 .photo-area .play img:hover {
     border-radius: 16px;
     background-image: url('./images/Rectangle 7.png'),
-    linear-gradient(rgb(1rgb(157, 154, 154)119, 119),grey);
+        linear-gradient(rgb(1rgb(157, 154, 154)119, 119), grey);
     background-blend-mode: overlay;
-    background-position: center ;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -311,33 +320,39 @@ body {
     text-align: center;
 }
 
-.parent{
+.parent {
     position: relative;
 }
-.parent img{
-    transition:.5s ease;
+
+.parent img {
+    transition: .5s ease;
 }
-.parent:hover img{
-    filter:brightness(38%)
+
+.parent:hover img {
+    filter: brightness(38%)
 }
+
 .middle {
-    position:absolute;
-    top:34%;
-    left:35%;
+    position: absolute;
+    top: 34%;
+    left: 35%;
     opacity: 0;
-    transition:.5s ease;
-    
+    transition: .5s ease;
+
     text-align: center;
 }
-.parent:hover .middle{
+
+.parent:hover .middle {
     opacity: 1;
 }
-.text-color{
-    color:#F948B2;
-    
+
+.text-color {
+    color: #F948B2;
+
 }
-.fa-regular{
-    color:white;
+
+.fa-regular {
+    color: white;
     font-size: 30px;
     cursor: pointer;
 }
@@ -375,6 +390,22 @@ body {
 
     }
 
+    .banner-container .text-area h1 {
+        font-size: 15px;
+    }
+
+    .banner-container .text-area .linear {
+        font-size: 40px;
+    }
+
+    .banner-container .text-area p {
+        font-size: 10px;
+    }
+
+    .banner-container .text-area i {
+        font-size: 10px;
+    }
+
     .banner .image-area img {
         width: 200px;
         position: center;
@@ -389,6 +420,7 @@ body {
 
     .banner-container .text-area {
         background-image: url('../images/Group 14.png');
+        text-align: center;
 
     }
 
@@ -438,6 +470,7 @@ body {
 
     .funny-section .photo-area img {
         width: 200px;
+        gap: 10px
     }
 
     .play-instant .image-area .big img {
@@ -452,23 +485,58 @@ body {
     }
 
     .column-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        flex-direction: column;
         justify-items: center;
         margin-bottom: 30px;
     }
 
-    .column2-container {
+    /* .column2-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         justify-items: center;
         margin-bottom: 30px;
-    }
+    } */
 
     .game-items {
         width: 30%;
         margin: 0 auto;
+    }
+
+    banner-container .text-area h1 {
+        color: #0B0223;
+        font-size: 40px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .footer-menu {
+        flex-wrap: wrap;
+        width: 60%;
+        margin: 60px auto 0;
+    }
+
+    .footer-logo .title{
+        font-size: 20px;
+    }
+    .footer-logo img{
+        width:70px;
+    }
+    .footer-icon {
+        flex-wrap: wrap;
+        width: 40%;
+        margin: 60px auto 0;
+    }
+    .footer-icon li a{
+        font-size: 23px;
+    }
+    .policy {
+        flex-wrap: wrap;
+        width: 45%;
+        margin: 60px auto 0;
+    }
+    .copyright p{
+        font-size: 10px;
+        margin-top: 25px;
     }
 
 
