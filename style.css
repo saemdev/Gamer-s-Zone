@@ -127,7 +127,7 @@ body {
 /* main area  */
 .play-instant-container .play-instant {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
 }
