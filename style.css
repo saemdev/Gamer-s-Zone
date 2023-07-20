@@ -133,11 +133,11 @@ body {
 }
 
 .play-instant .image-area .big img {
-    width: 500px;
+    width: 80%;
 }
 
 .play-instant .image-area .small img {
-    width: 300px;
+    width: 50%;
     position: relative;
     bottom: 230px;
     right: 130px;
@@ -272,10 +272,6 @@ body {
     justify-content: center; */
     
 }
-.second-row{
-    margin-left: 100px;
-}
-
 .column-container .column li{
     list-style: none;
 }
@@ -469,7 +465,7 @@ body {
     .photo-area p {
         font-size: 7px;
         text-align: center;
-        margin: 20px 0;
+        margin: 10px 0;
     }
 
     .photo-area br {
@@ -478,6 +474,15 @@ body {
 
     .img .relative {
         display: none;
+    }
+    .middle {
+        position: absolute;
+        top: 38%;
+        left: 40%;
+        opacity: 0;
+        transition: .5s ease;
+    
+        text-align: center;
     }
 
     .play-instant-container .play-instant {
@@ -529,7 +534,6 @@ body {
         
     }
 
-
     banner-container .text-area h1 {
         color: #0B0223;
         font-size: 40px;
@@ -549,8 +553,9 @@ body {
 
     .footer-menu {
         flex-wrap: wrap;
-        width: 60%;
+        width: 70%;
         margin: 60px auto 0;
+        font-size: 13px;
     }
 
     .footer-logo .title{
@@ -598,6 +603,16 @@ body {
       .photo-area .parent p{
         font-size: 12px;
       }
+
+      .middle {
+        position: absolute;
+        top: 28%;
+        left: 30%;
+        opacity: 0;
+        transition: .5s ease;
+    
+        text-align: center;
+    }
       .funny-section .photo-area .parent p br{
         display: none;
       }
@@ -645,7 +660,7 @@ body {
      
     .footer-menu {
         flex-wrap: wrap;
-        width: 60%;
+        width: 50%;
         margin: 60px auto 0;
     }
 
@@ -657,7 +672,7 @@ body {
     }
     .footer-icon {
         flex-wrap: wrap;
-        width: 70%;
+        width: 26%;
         margin: 60px auto 0;
     }
     .footer-icon li a{
@@ -673,6 +688,4 @@ body {
         margin-top: 25px;
     }
 }
-      
-      
-}
+
